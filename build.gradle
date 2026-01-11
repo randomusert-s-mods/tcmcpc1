@@ -19,6 +19,16 @@ group = mod_group_id
 
 repositories {
 
+maven {
+    // location of the maven that hosts JEI files since January 2023
+    name = "Jared's maven"
+    url = "https://maven.blamejared.com/"
+  }
+  maven {
+    // location of a maven mirror for JEI files, as a fallback
+    name = "ModMaven"
+    url = "https://modmaven.dev"
+  }
 }
 
 base {
@@ -122,15 +132,8 @@ dependencies {
     // implementation "io.github.randomusert.mods.tincraft:tincraft:1.21.1-0.1.2"
     
 
-    // Example mod dependency using a file as dependency
+    implementation "mezz.jei:jei-1.21.1-neoforge:19.27.0.340"
 
-
-    // Example project dependency using a sister or child project:
-    // implementation project(":myproject")
-
-    // For more info:
-    // http://www.gradle.org/docs/current/userguide/artifact_dependencies_tutorial.html
-    // http://www.gradle.org/docs/current/userguide/dependency_management.html
 }
 
 // This block of code expands all declared replace properties in the specified resource targets.
