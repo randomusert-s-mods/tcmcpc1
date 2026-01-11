@@ -29,6 +29,9 @@ maven {
     name = "ModMaven"
     url = "https://modmaven.dev"
   }
+  maven {
+        url "https://cursemaven.com"
+    }
 }
 
 base {
@@ -133,6 +136,8 @@ dependencies {
     
 
     implementation "mezz.jei:jei-1.21.1-neoforge:19.27.0.340"
+
+    implementation "curse.maven:mekanism-268560:7132168"
 
 }
 
