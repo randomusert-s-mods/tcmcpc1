@@ -1,6 +1,8 @@
 {
   "creativetab.tcmpc1.main": "Main tincraft modpack core tab",
   "item.tcmpc1.tin_ingot": "Tin Ingot (Don't have usages. a icon for creative mode tab.)",
+  "block.tcmpc1.compressed_tin_block_x1": "Compressed Tin Block x1",
+  "block.tcmpc1.compressed_tin_block_x2": "Compressed Tin Block x2",
 
   "tcmpc1.configuration.title": "tincraft modpack core1 Configs",
   "tcmpc1.configuration.section.tcmpc1.common.toml": "tincraft modpack core1 Configs",

@@ -2,6 +2,7 @@ package io.github.randomusert.mods.tcmpc1.init;
 
 import io.github.randomusert.mods.tcmpc1.tincraftmodpackcore1;
 import io.github.randomusert.mods.tcmpc1.item.TinIngot;
+import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Rarity;
 import net.neoforged.neoforge.registries.DeferredItem;
@@ -18,4 +19,10 @@ public class ModItems {
             TinIngot::new,
             new Item.Properties().rarity(Rarity.COMMON)
     );
+
+    public static final DeferredItem<BlockItem> COMPRESSED_TIN_BLOCK_X1_ITEM = ITEMS.register("compressed_tin_block_x1",
+            () -> new BlockItem(ModBlocks.COMPRESSED_TIN_BLOCK_X1.get(), new Item.Properties()));
+
+    public static final DeferredItem<BlockItem> COMPRESSED_TIN_BLOCK_X2_ITEM = ITEMS.register("compressed_tin_block_x2",
+            () -> new BlockItem(ModBlocks.COMPRESSED_TIN_BLOCK_X2.get(), new Item.Properties()));
 }

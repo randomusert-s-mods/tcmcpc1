@@ -8,8 +8,13 @@ import net.minecraft.data.recipes.RecipeCategory;
 import net.minecraft.data.recipes.RecipeOutput;
 import net.minecraft.data.recipes.RecipeProvider;
 import net.minecraft.data.recipes.ShapelessRecipeBuilder;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
-import net.minecraft.world.item.crafting.ShapedRecipe;
+import mekanism.api.datagen.recipe.builder.*;
+import mekanism.api.recipes.ingredients.creator.IngredientCreatorAccess;
+import mekanism.api.datagen.recipe.builder.ItemStackToItemStackRecipeBuilder;
+
+
 
 public class ModRecipeProvider extends RecipeProvider {
     public ModRecipeProvider(PackOutput packOutput, CompletableFuture<HolderLookup.Provider> registries) {
@@ -24,6 +29,10 @@ public class ModRecipeProvider extends RecipeProvider {
                 .requires(Items.IRON_BLOCK, 9)
                 .unlockedBy("has_iron_block", has(Items.IRON_BLOCK))
                 .save(output);
+
+                ItemStackToItemStackRecipeBuilder.crushing(IngredientCreatorAccess.item().from(ModCustomItems.TIN_INGOT_TC), new ItemStack(ModCustomItems.OSMIUM_RAW_MEK)).build(output);
+
+                ItemStackToItemStackRecipeBuilder.crushing(IngredientCreatorAccess.item().from(Items.GRANITE), new ItemStack(ModCustomItems.TIN_ORE_TC)).build(output);
     }
 
 }

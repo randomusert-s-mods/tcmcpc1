@@ -32,6 +32,10 @@ maven {
   maven {
         url "https://cursemaven.com"
     }
+    maven { // Mekanism
+        name = "ModMaven"
+        url = "https://modmaven.dev"
+    }
 }
 
 base {
@@ -135,9 +139,10 @@ dependencies {
     // implementation "io.github.randomusert.mods.tincraft:tincraft:1.21.1-0.1.2"
     
 
-    implementation "mezz.jei:jei-1.21.1-neoforge:19.27.0.340"
+    implementation "mezz.jei:jei-1.21.1-neoforge:19.27.0.340" // JEI
 
-    implementation "curse.maven:mekanism-268560:7132168"
+    implementation "mekanism:Mekanism:1.21.1-10.7.17.83" // Mekanism
+    implementation "curse.maven:tincraft-1380162:7437112" // TinCraft
 
 }
 
