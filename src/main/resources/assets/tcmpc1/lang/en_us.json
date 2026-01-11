@@ -1,0 +1,12 @@
+{
+  "creativetab.tcmpc1.main": "Main tincraft modpack core tab",
+  "item.tcmpc1.tin_ingot": "Tin Ingot (Don't have usages. a icon for creative mode tab.)",
+
+  "tcmpc1.configuration.title": "tincraft modpack core1 Configs",
+  "tcmpc1.configuration.section.tcmpc1.common.toml": "tincraft modpack core1 Configs",
+  "tcmpc1.configuration.section.tcmpc1.common.toml.title": "tincraft modpack core1 Configs",
+  "tcmpc1.configuration.items": "Item List",
+  "tcmpc1.configuration.logDirtBlock": "Log Dirt Block",
+  "tcmpc1.configuration.magicNumberIntroduction": "Magic Number Text",
+  "tcmpc1.configuration.magicNumber": "Magic Number"
+}

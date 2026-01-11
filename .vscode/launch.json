@@ -1,0 +1,93 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "request": "launch",
+      "name": "Client",
+      "presentation": {
+        "group": "Mod Development - tcmpc1",
+        "order": 0
+      },
+      "projectName": "tcmpc1",
+      "mainClass": "net.neoforged.devlaunch.Main",
+      "args": [
+        "@D:\\mcdev\\tcmpc1\\build\\moddev\\clientRunProgramArgs.txt"
+      ],
+      "vmArgs": [
+        "@D:\\mcdev\\tcmpc1\\build\\moddev\\clientRunVmArgs.txt",
+        "-Dfml.modFolders\u003dtcmpc1%%D:\\mcdev\\tcmpc1\\bin\\main"
+      ],
+      "cwd": "${workspaceFolder}\\run",
+      "env": {},
+      "console": "internalConsole",
+      "shortenCommandLine": "none"
+    },
+    {
+      "type": "java",
+      "request": "launch",
+      "name": "Data",
+      "presentation": {
+        "group": "Mod Development - tcmpc1",
+        "order": 1
+      },
+      "projectName": "tcmpc1",
+      "mainClass": "net.neoforged.devlaunch.Main",
+      "args": [
+        "@D:\\mcdev\\tcmpc1\\build\\moddev\\dataRunProgramArgs.txt"
+      ],
+      "vmArgs": [
+        "@D:\\mcdev\\tcmpc1\\build\\moddev\\dataRunVmArgs.txt",
+        "-Dfml.modFolders\u003dtcmpc1%%D:\\mcdev\\tcmpc1\\bin\\main"
+      ],
+      "cwd": "${workspaceFolder}\\run",
+      "env": {},
+      "console": "internalConsole",
+      "shortenCommandLine": "none"
+    },
+    {
+      "type": "java",
+      "request": "launch",
+      "name": "GameTestServer",
+      "presentation": {
+        "group": "Mod Development - tcmpc1",
+        "order": 2
+      },
+      "projectName": "tcmpc1",
+      "mainClass": "net.neoforged.devlaunch.Main",
+      "args": [
+        "@D:\\mcdev\\tcmpc1\\build\\moddev\\gameTestServerRunProgramArgs.txt"
+      ],
+      "vmArgs": [
+        "@D:\\mcdev\\tcmpc1\\build\\moddev\\gameTestServerRunVmArgs.txt",
+        "-Dfml.modFolders\u003dtcmpc1%%D:\\mcdev\\tcmpc1\\bin\\main"
+      ],
+      "cwd": "${workspaceFolder}\\run",
+      "env": {},
+      "console": "internalConsole",
+      "shortenCommandLine": "none"
+    },
+    {
+      "type": "java",
+      "request": "launch",
+      "name": "Server",
+      "presentation": {
+        "group": "Mod Development - tcmpc1",
+        "order": 3
+      },
+      "projectName": "tcmpc1",
+      "mainClass": "net.neoforged.devlaunch.Main",
+      "args": [
+        "@D:\\mcdev\\tcmpc1\\build\\moddev\\serverRunProgramArgs.txt"
+      ],
+      "vmArgs": [
+        "@D:\\mcdev\\tcmpc1\\build\\moddev\\serverRunVmArgs.txt",
+        "-Dfml.modFolders\u003dtcmpc1%%D:\\mcdev\\tcmpc1\\bin\\main"
+      ],
+      "cwd": "${workspaceFolder}\\run",
+      "env": {},
+      "console": "internalConsole",
+      "shortenCommandLine": "none"
+    }
+  ]
+}
