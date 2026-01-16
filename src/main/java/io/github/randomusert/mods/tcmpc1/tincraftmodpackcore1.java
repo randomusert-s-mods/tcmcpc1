@@ -4,6 +4,7 @@ import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
 
+import io.github.randomusert.mods.tcmpc1.init.ModBlocks;
 import io.github.randomusert.mods.tcmpc1.init.ModCreativeTabs;
 import io.github.randomusert.mods.tcmpc1.init.ModItems;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -29,8 +30,10 @@ public class tincraftmodpackcore1 {
         modEventBus.addListener(this::commonSetup);
         NeoForge.EVENT_BUS.register(this);
 
-        ModItems.ITEMS.register(modEventBus);
         ModCreativeTabs.CREATIVE_MODE_TABS.register(modEventBus);
+        ModBlocks.BLOCKS.register(modEventBus);
+        ModItems.ITEMS.register(modEventBus);
+
 
         // Register our mod's ModConfigSpec so that FML can create and load the config file for us
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);

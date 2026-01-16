@@ -1,5 +1,6 @@
 {
-    "variants": {
-        "": { "model": "tcmpc1:block/compressed_tin_block_x1" }
-    }
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "tcmpc1:block/compressed_tin_block_x1"
+  }
 }
