@@ -21,5 +21,6 @@ public class ModCreativeTabs {
                     .displayItems((itemDisplayParameter, output) -> {
                         output.accept(ModBlocks.COMPRESSED_TIN_BLOCK_X1);
                         output.accept(ModBlocks.COMPRESSED_TIN_BLOCK_X2);
+                        output.accept(ModItems.INFINIUM_INGOT);
                     }).build());
 }

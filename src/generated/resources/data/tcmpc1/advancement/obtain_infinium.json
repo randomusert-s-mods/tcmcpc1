@@ -1,0 +1,33 @@
+{
+  "parent": "minecraft:story/root",
+  "criteria": {
+    "obtain_infinium": {
+      "conditions": {
+        "items": [
+          {
+            "items": "tcmpc1:infinium"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": "Obtain infinium. a Really late game item.",
+    "frame": "challenge",
+    "icon": {
+      "count": 1,
+      "id": "tcmpc1:infinium"
+    },
+    "title": "A material from far far away"
+  },
+  "requirements": [
+    [
+      "obtain_infinium"
+    ]
+  ],
+  "rewards": {
+    "experience": 1000
+  },
+  "sends_telemetry_event": true
+}
