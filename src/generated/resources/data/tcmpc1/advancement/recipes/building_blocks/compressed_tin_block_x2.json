@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "tcmpc1:compressed_tin_block_x2"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_tin_block_x1": {
+      "conditions": {
+        "items": [
+          {
+            "items": "tcmpc1:compressed_tin_block_x1"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_tin_block_x1"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "tcmpc1:compressed_tin_block_x2"
+    ]
+  }
+}

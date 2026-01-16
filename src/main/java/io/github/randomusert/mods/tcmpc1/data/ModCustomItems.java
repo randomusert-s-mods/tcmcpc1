@@ -12,4 +12,6 @@ public class ModCustomItems {
     public static ItemLike OSMIUM_RAW_MEK = ItemStringToItemLike.ItemStringToItemLike("mekanism", "raw_osmium");
 
     public static ItemLike TIN_ORE_TC = ItemStringToItemLike.ItemStringToItemLike("tincraft", "tin_ore");
+
+    public static ItemLike TIN_BLOCK_TC = ItemStringToItemLike.ItemStringToItemLike("tincraft", "tin_block");
 }
