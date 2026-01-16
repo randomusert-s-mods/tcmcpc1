@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "tcmpc1:compressed_tin_block_x2"
+    },
+    {
+      "item": "tcmpc1:compressed_tin_block_x2"
+    },
+    {
+      "item": "tcmpc1:compressed_tin_block_x2"
+    },
+    {
+      "item": "tcmpc1:compressed_tin_block_x2"
+    },
+    {
+      "item": "tcmpc1:compressed_tin_block_x2"
+    },
+    {
+      "item": "tcmpc1:compressed_tin_block_x2"
+    },
+    {
+      "item": "tcmpc1:compressed_tin_block_x2"
+    },
+    {
+      "item": "tcmpc1:compressed_tin_block_x2"
+    },
+    {
+      "item": "mekanism:pellet_antimatter"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "tcmpc1:infinium"
+  }
+}

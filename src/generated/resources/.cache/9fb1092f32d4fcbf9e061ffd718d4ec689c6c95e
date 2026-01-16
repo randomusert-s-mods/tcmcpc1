@@ -1,9 +1,11 @@
-// 1.21.1	2026-01-16T18:35:49.5070087	Recipes
+// 1.21.1	2026-01-16T18:50:38.8430154	Recipes
 43a3ef05d7d8bea0bf295d0f89a9e5f4f66dbcd8 data/mekanism/advancement/recipes/misc/basic_energy_cube.json
 2ad9acd40814f1340cac069c1928f36af7ad4582 data/mekanism/recipe/basic_energy_cube.json
 f66befef881fcba8b8815da399c22b18a28a6171 data/mekanism/recipe/raw_osmium.json
 e84d0dc5d14c16c5d7f055e26f3295794232465c data/tcmpc1/advancement/recipes/building_blocks/compressed_tin_block_x1.json
 3e569946c178b70a385cfd503fffe4e5bf81957e data/tcmpc1/advancement/recipes/building_blocks/compressed_tin_block_x2.json
+859d31fd4887a3622c09d3a03c784878f01628c5 data/tcmpc1/advancement/recipes/misc/infinium.json
 80e013c015861e4243055467d9f4ca0fd4cad97c data/tcmpc1/recipe/compressed_tin_block_x1.json
 1a8183a8432e114d8a7f29d138c0792d7fec5250 data/tcmpc1/recipe/compressed_tin_block_x2.json
+d04a04bfbba4e4305551b16ac3f3666859685c88 data/tcmpc1/recipe/infinium.json
 ef345eed672d48fd00a15d60b3cfe0274bac1357 data/tincraft/recipe/tin_ore.json

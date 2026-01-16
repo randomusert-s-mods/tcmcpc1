@@ -1,0 +1,43 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_antimatter_pellet": {
+      "conditions": {
+        "items": [
+          {
+            "items": "mekanism:pellet_antimatter"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_compressed_tin_block_x2": {
+      "conditions": {
+        "items": [
+          {
+            "items": "tcmpc1:compressed_tin_block_x2"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "tcmpc1:infinium"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_compressed_tin_block_x2",
+      "has_antimatter_pellet"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "tcmpc1:infinium"
+    ]
+  }
+}

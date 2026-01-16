@@ -3,6 +3,7 @@ package io.github.randomusert.mods.tcmpc1.data;
 import java.util.concurrent.CompletableFuture;
 
 import io.github.randomusert.mods.tcmpc1.init.ModBlocks;
+import io.github.randomusert.mods.tcmpc1.init.ModItems;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
@@ -48,6 +49,13 @@ public class ModRecipeProvider extends RecipeProvider {
                 .pattern("XXX")
                 .define('X', ModBlocks.COMPRESSED_TIN_BLOCK_X1)
                 .unlockedBy("has_tin_block_x1", has(ModBlocks.COMPRESSED_TIN_BLOCK_X1))
+                .save(output);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.INFINIUM_INGOT)
+                .requires(ModBlocks.COMPRESSED_TIN_BLOCK_X2, 8)
+                .requires(ModCustomItems.ANTIMATTER_PALLET)
+                .unlockedBy("has_compressed_tin_block_x2", has(ModBlocks.COMPRESSED_TIN_BLOCK_X2))
+                .unlockedBy("has_antimatter_pellet", has(ModCustomItems.ANTIMATTER_PALLET))
                 .save(output);
     }
 

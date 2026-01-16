@@ -15,6 +15,6 @@ public class infinium extends Item {
 
     @Override
     public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
-        tooltipComponents.add(Component.literal("A Creative mode Item. Really hard to get. crafted with 8x compressed tin block x2 and a ultimate circuit"));
+        tooltipComponents.add(Component.literal("A Creative mode Item. Really hard to get. crafted with 8x compressed tin block x2 and a antimatter pellet."));
     }
 }
