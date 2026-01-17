@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "X": {
+      "item": "tcmpc1:infinium"
+    },
+    "Y": {
+      "item": "mekanism:ultimate_bin"
+    }
+  },
+  "pattern": [
+    "XXX",
+    "XYX",
+    "XXX"
+  ],
+  "result": {
+    "count": 1,
+    "id": "mekanism:creative_bin"
+  }
+}

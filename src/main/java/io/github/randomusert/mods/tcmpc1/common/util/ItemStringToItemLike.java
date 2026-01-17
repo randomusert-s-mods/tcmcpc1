@@ -15,7 +15,7 @@ public class ItemStringToItemLike {
         Item item = BuiltInRegistries.ITEM.get(id);
 
         if (item == Items.AIR) {
-            throw new IllegalStateException("item with id " + id + " cannot be found! make sure you have the mod installed that adds this item!");
+            throw new IllegalStateException("item with id " + id + " cannot be found! make sure you have the mod installed as a dependency that adds this item!");
             
         }
 

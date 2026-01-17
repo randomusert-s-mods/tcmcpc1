@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_infinium": {
+      "conditions": {
+        "items": [
+          {
+            "items": "tcmpc1:infinium"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "mekanism:creative_bin"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_infinium"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mekanism:creative_bin"
+    ]
+  }
+}

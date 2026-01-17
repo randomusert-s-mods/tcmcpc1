@@ -25,14 +25,10 @@ public class ModRecipeProvider extends RecipeProvider {
 
     @Override
     protected void buildRecipes(RecipeOutput output) {
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModCustomItems.BASIC_ENERGY_CUBE_MEK)
-                .requires(Items.IRON_BLOCK, 9)
-                .unlockedBy("has_iron_block", has(Items.IRON_BLOCK))
-                .save(output);
 
-                ItemStackToItemStackRecipeBuilder.crushing(IngredientCreatorAccess.item().from(ModCustomItems.TIN_INGOT_TC), new ItemStack(ModCustomItems.OSMIUM_RAW_MEK)).build(output);
+        ItemStackToItemStackRecipeBuilder.crushing(IngredientCreatorAccess.item().from(ModCustomItems.TIN_INGOT_TC), new ItemStack(ModCustomItems.OSMIUM_RAW_MEK)).build(output);
 
-                ItemStackToItemStackRecipeBuilder.crushing(IngredientCreatorAccess.item().from(Items.GRANITE), new ItemStack(ModCustomItems.TIN_ORE_TC)).build(output);
+        ItemStackToItemStackRecipeBuilder.crushing(IngredientCreatorAccess.item().from(Items.GRANITE), new ItemStack(ModCustomItems.TIN_ORE_TC)).build(output);
 
 
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.COMPRESSED_TIN_BLOCK_X1)
@@ -57,6 +53,28 @@ public class ModRecipeProvider extends RecipeProvider {
                 .unlockedBy("has_compressed_tin_block_x2", has(ModBlocks.COMPRESSED_TIN_BLOCK_X2))
                 .unlockedBy("has_antimatter_pellet", has(ModCustomItems.ANTIMATTER_PALLET))
                 .save(output);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModCustomItems.CREATIVE_FLUID_TANK_MEK)
+                .pattern("XYX")
+                .pattern("YOY")
+                .pattern("XYX")
+                .define('Y', ModItems.INFINIUM_INGOT)
+                .define('X', ModCustomItems.ULTIMATE_FLUID_TANK_MEK)
+                .define('O', ModCustomItems.ATOMIC_ALLOY_MEK)
+                .unlockedBy("has_alloy_atomic", has(ModCustomItems.ATOMIC_ALLOY_MEK))
+                .unlockedBy("has_infinium", has(ModItems.INFINIUM_INGOT))
+                .save(output);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModCustomItems.CREATIVE_BIN_MEK)
+                .pattern("XXX")
+                .pattern("XYX")
+                .pattern("XXX")
+                .define('X', ModItems.INFINIUM_INGOT)
+                .define('Y', ModCustomItems.ULTIMATE_STORAGE_BIN_MEK)
+                .unlockedBy("has_infinium", has(ModItems.INFINIUM_INGOT))
+                .save(output);
+
+
     }
 
 }

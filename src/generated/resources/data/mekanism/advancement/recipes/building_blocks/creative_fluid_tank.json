@@ -1,0 +1,43 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_alloy_atomic": {
+      "conditions": {
+        "items": [
+          {
+            "items": "mekanism:alloy_atomic"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_infinium": {
+      "conditions": {
+        "items": [
+          {
+            "items": "tcmpc1:infinium"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "mekanism:creative_fluid_tank"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_alloy_atomic",
+      "has_infinium"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mekanism:creative_fluid_tank"
+    ]
+  }
+}
