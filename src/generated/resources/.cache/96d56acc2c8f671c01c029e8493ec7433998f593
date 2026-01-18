@@ -1,0 +1,9 @@
+// 1.21.1	2026-01-18T15:22:03.4346002	Tags for minecraft:item mod id tcmpc1
+7dd950a51b944277fc60eabd8720b451e945a3d5 data/refinedstorage/tags/item/disks.json
+d37b007c2dcd9ceff3979a30d7d0e356bcb35f0d data/refinedstorage/tags/item/disks/items.json
+c774cafeb6c9adeaca8686b235c3ea5561ee1e72 data/refinedstorage/tags/item/disks/items/1024k.json
+373a1491d81b38e03d12ced98b21ee969ca135e6 data/refinedstorage/tags/item/disks/items/256k.json
+e3af8087f788efd454415cfebd8c6b4b407e1fe4 data/refinedstorage/tags/item/parts.json
+090aeb79a5e2cecf7a08739ddefe5ca60820415f data/refinedstorage/tags/item/parts/items.json
+4885cd6c83278697136aaabffbeb1641b69c2f04 data/refinedstorage/tags/item/parts/items/1024k.json
+2a9959ff9f7f4d64d2276a697c61941d281aca68 data/refinedstorage/tags/item/parts/items/256k.json

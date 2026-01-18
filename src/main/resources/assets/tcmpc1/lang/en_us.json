@@ -3,7 +3,11 @@
   "item.tcmpc1.tin_ingot": "Tin Ingot (Don't have usages. a icon for creative mode tab.)",
   "block.tcmpc1.compressed_tin_block_x1": "Compressed Tin Block x1",
   "block.tcmpc1.compressed_tin_block_x2": "Compressed Tin Block x2",
-  "item.tcmpc1.infinum": "Infinium ingot",
+  "item.tcmpc1.infinium": "Infinium ingot",
+  "item.tcmpc1.storagepart_1024k": "1024K Storage Part",
+  "item.tcmpc1.storagepart_256k": "256K Storage Part",
+  "item.tcmpc1.disk_256k": "256K Storage Disk",
+  "item.tcmpc1.disk_1024k": "1024K Storage Disk",
 
   "tcmpc1.configuration.title": "tincraft modpack core1 Configs",
   "tcmpc1.configuration.section.tcmpc1.common.toml": "tincraft modpack core1 Configs",
@@ -11,5 +15,8 @@
   "tcmpc1.configuration.items": "Item List",
   "tcmpc1.configuration.logDirtBlock": "Log Dirt Block",
   "tcmpc1.configuration.magicNumberIntroduction": "Magic Number Text",
-  "tcmpc1.configuration.magicNumber": "Magic Number"
+  "tcmpc1.configuration.magicNumber": "Magic Number",
+  "jei.tcmpc1.infinium.info": "A Creative tier Item.\nReally expensive to get.\nCrafted with 8x compressed tin block x2 and a antimatter pellet.\nYou need to get a SPS from Mekanism to get 1 item.\nThe recipe is also a shapeless recipe",
+  "tooltip.tcmpc1.item.infinium": "",
+  "tooltip.tcmpc1.see_jei": "See JEI for more information"
 }

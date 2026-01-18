@@ -11,3 +11,5 @@ Init mod release. Beta
 * recipes for compressed tin block x1 and x2
 * Refined storage custom disks
 * item tags because to get the recipes working for the disks
+* add JEI info for Infinium
+* block tags

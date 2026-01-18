@@ -1,5 +1,6 @@
 package io.github.randomusert.mods.tcmpc1.item;
 
+import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
@@ -15,6 +16,7 @@ public class infinium extends Item {
 
     @Override
     public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
-        tooltipComponents.add(Component.literal("A Creative mode Item. Really hard to get. crafted with 8x compressed tin block x2 and a antimatter pellet."));
+        tooltipComponents.add(Component.literal("Creative tier item"));
+        tooltipComponents.add(Component.translatable("tooltip.tcmpc1.see_jei").withStyle(ChatFormatting.GRAY));
     }
 }

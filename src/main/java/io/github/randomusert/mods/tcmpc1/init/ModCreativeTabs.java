@@ -2,6 +2,7 @@ package io.github.randomusert.mods.tcmpc1.init;
 
 import java.util.function.Supplier;
 
+import io.github.randomusert.mods.tcmpc1.item.storage.LargeItemStorageVariant;
 import io.github.randomusert.mods.tcmpc1.tincraftmodpackcore1;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
@@ -22,5 +23,12 @@ public class ModCreativeTabs {
                         output.accept(ModBlocks.COMPRESSED_TIN_BLOCK_X1);
                         output.accept(ModBlocks.COMPRESSED_TIN_BLOCK_X2);
                         output.accept(ModItems.INFINIUM_INGOT);
+
+                        for (var type : LargeItemStorageVariant.values()) {
+                            output.accept(ModItems.ITEM_STORAGE_PART.get(type).get());
+                        }
+                        for (var type : LargeItemStorageVariant.values()) {
+                            output.accept(ModItems.ITEM_DISK.get(type).get());
+                        }
                     }).build());
 }
