@@ -2,17 +2,24 @@ package io.github.randomusert.mods.tcmpc1.data;
 
 import java.util.concurrent.CompletableFuture;
 
+import com.refinedmods.refinedstorage.common.misc.ProcessorItem;
+import com.refinedmods.refinedstorage.common.storage.ItemStorageVariant;
+import io.github.randomusert.mods.tcmpc1.common.util.ResourceLocationHelper;
 import io.github.randomusert.mods.tcmpc1.init.ModBlocks;
 import io.github.randomusert.mods.tcmpc1.init.ModItems;
+import io.github.randomusert.mods.tcmpc1.item.storage.LargeItemStorageVariant;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
+import net.minecraft.tags.TagKey;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import mekanism.api.datagen.recipe.builder.*;
 import mekanism.api.recipes.ingredients.creator.IngredientCreatorAccess;
 import mekanism.api.datagen.recipe.builder.ItemStackToItemStackRecipeBuilder;
-
+import net.neoforged.neoforge.common.Tags;
+import net.neoforged.neoforge.registries.DeferredItem;
 
 
 public class ModRecipeProvider extends RecipeProvider {
@@ -74,7 +81,71 @@ public class ModRecipeProvider extends RecipeProvider {
                 .unlockedBy("has_infinium", has(ModItems.INFINIUM_INGOT))
                 .save(output);
 
+        for (var type : LargeItemStorageVariant.values()) {
+            if (type.equals(LargeItemStorageVariant.TIER_5)) {
+                partRecipe(ModItems.ITEM_STORAGE_PART.get(type),
+                        com.refinedmods.refinedstorage.common.content.Items.INSTANCE.getItemStoragePart(ItemStorageVariant.SIXTY_FOUR_K),
+                        output);
+            } else {
 
+                partRecipe(ModItems.ITEM_STORAGE_PART.get(type),
+                        ModItemTags.Items.PARTS_ITEM.get(
+                                LargeItemStorageVariant.values()[type.ordinal() -1]),
+                        output);
+            }
+
+            diskRecipe(ModItems.ITEM_DISK.get(type), ModItemTags.Items.PARTS_ITEM.get(type), output);
+        }
+
+
+    }
+
+    private void partRecipe(DeferredItem<Item> result, TagKey<Item> previousPart, RecipeOutput consumer) {
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, result.get())
+                .pattern("DID")
+                .pattern("GRG")
+                .pattern("DGD")
+                .define('G', previousPart)
+                .define('D', com.refinedmods.refinedstorage.common.content.Items.INSTANCE.getProcessor(ProcessorItem.Type.ADVANCED))
+                .define('I', com.refinedmods.refinedstorage.common.content.Items.INSTANCE.getQuartzEnrichedCopper())
+                .define('R', Items.REDSTONE_BLOCK)
+                .unlockedBy("has_previous_part", has(previousPart))
+                .save(consumer, ResourceLocationHelper.rl("part/" + result.getId().getPath()));
+    }
+
+    private void partRecipe(DeferredItem<Item> result, Item previousPart,
+                            RecipeOutput consumer) {
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, result.get())
+                .pattern("DID")
+                .pattern("GRG")
+                .pattern("DGD")
+                .define('G', previousPart)
+                .define('D', com.refinedmods.refinedstorage.common.content.Items.INSTANCE.getProcessor(ProcessorItem.Type.ADVANCED))
+                .define('I', com.refinedmods.refinedstorage.common.content.Items.INSTANCE.getQuartzEnrichedIron())
+                .define('R', Items.REDSTONE)
+                .unlockedBy("has_previous_part", has(previousPart))
+                .save(consumer, ResourceLocationHelper.rl("part/" + result.getId().getPath()));
+    }
+
+
+    private void diskRecipe(DeferredItem<Item> result, TagKey<Item> part,
+                            RecipeOutput consumer) {
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, result.get())
+                .pattern("GRG")
+                .pattern("RSR")
+                .pattern("III")
+                .define('G', Tags.Items.GLASS_BLOCKS)
+                .define('S', part)
+                .define('I', com.refinedmods.refinedstorage.common.content.Items.INSTANCE.getQuartzEnrichedIron())
+                .define('R', Items.REDSTONE)
+                .unlockedBy("has_part", has(part))
+                .save(consumer, ResourceLocationHelper.rl("disk/shaped/" + result.getId().getPath()));
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, result.get())
+                .requires(com.refinedmods.refinedstorage.common.content.Items.INSTANCE.getStorageHousing())
+                .requires(part)
+                .unlockedBy("has_part", has(part))
+                .save(consumer, ResourceLocationHelper.rl("disk/shapeless/" + result.getId().getPath()));
     }
 
 }

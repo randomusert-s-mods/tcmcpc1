@@ -1,3 +1,7 @@
-// 1.21.1	2026-01-16T18:35:49.4940173	Item Models: tcmpc1
+// 1.21.1	2026-01-18T15:09:11.7913431	Item Models: tcmpc1
+dfa8c46bfc5909d52e16a2e2d941f74d27a0c0e3 assets/tcmpc1/models/item/disk_1024k.json
+9a70324177d7271541d427740822a4c30d2799d3 assets/tcmpc1/models/item/disk_256k.json
 32170cabc7c06cdb4c97679256dcc8737641bce5 assets/tcmpc1/models/item/infinium.json
+9be821df7b77469d52ec72f1c439e884fcb29cdf assets/tcmpc1/models/item/storagepart_1024k.json
+943da5d68bbe8ff06e89dba9c2cd95b68d32bd22 assets/tcmpc1/models/item/storagepart_256k.json
 b17100f6918a20b9fd9072cf1e3f4cdc196bd3f5 assets/tcmpc1/models/item/tin_ingot.json

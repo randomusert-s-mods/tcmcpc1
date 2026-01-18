@@ -36,6 +36,18 @@ maven {
         name = "ModMaven"
         url = "https://modmaven.dev"
     }
+
+    repositories {
+        maven {
+            name = "Refined Storage"
+            url = uri("https://maven.creeperhost.net")
+            content {
+                includeGroup("com.refinedmods.refinedstorage")
+            }
+        }
+    }
+
+    mavenCentral()
 }
 
 base {
@@ -135,6 +147,13 @@ dependencies {
     // This maps to ./libs/coolmod-${mc_version}-${coolmod_version}.jar
     // The group id is ignored when searching -- in this case, it is "blank"
 
+    //lombok
+    compileOnly("org.projectlombok:lombok:1.18.42")
+    annotationProcessor("org.projectlombok:lombok:1.18.42")
+
+    testCompileOnly("org.projectlombok:lombok:1.18.42")
+    testAnnotationProcessor("org.projectlombok:lombok:1.18.42")
+
 
     // implementation "io.github.randomusert.mods.tincraft:tincraft:1.21.1-0.1.2"
     
@@ -143,6 +162,10 @@ dependencies {
 
     implementation "mekanism:Mekanism:1.21.1-10.7.17.83" // Mekanism
     implementation "curse.maven:tincraft-1380162:7437112" // TinCraft
+
+    api("com.refinedmods.refinedstorage:refinedstorage-neoforge:2.0.0")
+
+
 
 }
 
