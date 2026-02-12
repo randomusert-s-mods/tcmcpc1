@@ -1,5 +1,6 @@
 package io.github.randomusert.mods.tcmpc1;
 
+import io.github.randomusert.mods.tcmpc1.init.ModCodecs;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -33,6 +34,7 @@ public class tincraftmodpackcore1 {
         ModCreativeTabs.CREATIVE_MODE_TABS.register(modEventBus);
         ModBlocks.BLOCKS.register(modEventBus);
         ModItems.ITEMS.register(modEventBus);
+        ModCodecs.CONDITION_CODEC.register(modEventBus);
 
 
         // Register our mod's ModConfigSpec so that FML can create and load the config file for us
@@ -43,13 +45,6 @@ public class tincraftmodpackcore1 {
         // Some common setup code
         LOGGER.info("HELLO FROM COMMON SETUP");
 
-        if (Config.LOG_DIRT_BLOCK.getAsBoolean()) {
-            LOGGER.info("DIRT BLOCK >> {}", BuiltInRegistries.BLOCK.getKey(Blocks.DIRT));
-        }
-
-        LOGGER.info("{}{}", Config.MAGIC_NUMBER_INTRODUCTION.get(), Config.MAGIC_NUMBER.getAsInt());
-
-        Config.ITEM_STRINGS.get().forEach((item) -> LOGGER.info("ITEM >> {}", item));
     }
 
 

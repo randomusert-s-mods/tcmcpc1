@@ -1,4 +1,10 @@
 {
+  "neoforge:conditions": [
+    {
+      "type": "tcmpc1:config_enabled",
+      "config_key": "enableCompressedTinBlockRecipes"
+    }
+  ],
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
