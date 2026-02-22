@@ -1,6 +1,5 @@
 package io.github.randomusert.mods.tcmpc1;
 
-import io.github.randomusert.mods.tcmpc1.init.ModCodecs;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -8,12 +7,9 @@ import com.mojang.logging.LogUtils;
 import io.github.randomusert.mods.tcmpc1.init.ModBlocks;
 import io.github.randomusert.mods.tcmpc1.init.ModCreativeTabs;
 import io.github.randomusert.mods.tcmpc1.init.ModItems;
-import net.minecraft.core.registries.BuiltInRegistries;
-import net.minecraft.world.level.block.Blocks;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.Mod;
-import net.neoforged.fml.config.ModConfig;
 import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.neoforge.common.NeoForge;
@@ -34,11 +30,7 @@ public class tincraftmodpackcore1 {
         ModCreativeTabs.CREATIVE_MODE_TABS.register(modEventBus);
         ModBlocks.BLOCKS.register(modEventBus);
         ModItems.ITEMS.register(modEventBus);
-        ModCodecs.CONDITION_CODEC.register(modEventBus);
 
-
-        // Register our mod's ModConfigSpec so that FML can create and load the config file for us
-        modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
     }
 
     private void commonSetup(FMLCommonSetupEvent event) {
