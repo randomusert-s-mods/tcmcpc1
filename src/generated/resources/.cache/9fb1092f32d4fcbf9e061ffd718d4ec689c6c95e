@@ -1,7 +1,9 @@
-// 1.21.1	2026-02-22T17:44:28.6908785	Recipes
+// 1.21.1	2026-01-18T15:09:11.7983392	Recipes
+b2dd20822539fdf71ca10c9eaacc254819abfa25 data/mekanism/advancement/recipes/building_blocks/creative_bin.json
+02bee17a959f090736233d9feddf9b02c4fde439 data/mekanism/advancement/recipes/building_blocks/creative_fluid_tank.json
+2d6b8e19cfd62dbc26cdc471a6e65e9f12b148ed data/mekanism/recipe/creative_bin.json
+b8cd03c22a06ed2ad0257be21fa69bfb94a01ead data/mekanism/recipe/creative_fluid_tank.json
 f66befef881fcba8b8815da399c22b18a28a6171 data/mekanism/recipe/raw_osmium.json
-2855b772d6688f8c7a3c924558752cf3d0917c43 data/minecraft/advancement/recipes/misc/gravel.json
-a96949f8874670d2a2aec4e561b9bcb21d930776 data/minecraft/recipe/gravel.json
 e84d0dc5d14c16c5d7f055e26f3295794232465c data/tcmpc1/advancement/recipes/building_blocks/compressed_tin_block_x1.json
 3e569946c178b70a385cfd503fffe4e5bf81957e data/tcmpc1/advancement/recipes/building_blocks/compressed_tin_block_x2.json
 896469a3df2ee268f603ec72305fdea7c178fb01 data/tcmpc1/advancement/recipes/misc/disk/shaped/disk_1024k.json
@@ -11,10 +13,8 @@ ca6c07838ac53e5b55254f548a9939279e8450f3 data/tcmpc1/advancement/recipes/misc/di
 859d31fd4887a3622c09d3a03c784878f01628c5 data/tcmpc1/advancement/recipes/misc/infinium.json
 609c95f3f3ade835774335372630d5ea1dbefd3a data/tcmpc1/advancement/recipes/misc/part/storagepart_1024k.json
 89db2e9bebb08233fa8112b3581f85c257c81ecc data/tcmpc1/advancement/recipes/misc/part/storagepart_256k.json
-7cd2d10908813a4f99a9cb022c87740efbcc970f data/tcmpc1/advancement/recipes/tools/diamond_hammer.json
 80e013c015861e4243055467d9f4ca0fd4cad97c data/tcmpc1/recipe/compressed_tin_block_x1.json
 1a8183a8432e114d8a7f29d138c0792d7fec5250 data/tcmpc1/recipe/compressed_tin_block_x2.json
-c28ba1692044c58a915b0eeb581854f2ae31e628 data/tcmpc1/recipe/diamond_hammer.json
 5b7a56b5f1b65a9ab91e536ed8085718bc1d5250 data/tcmpc1/recipe/disk/shaped/disk_1024k.json
 acd18807530c3aa02e476728d72c85400c49e50e data/tcmpc1/recipe/disk/shaped/disk_256k.json
 d3268d497ca2ac504c8a2906c586aabac22dc875 data/tcmpc1/recipe/disk/shapeless/disk_1024k.json

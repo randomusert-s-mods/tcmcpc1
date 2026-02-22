@@ -4,6 +4,7 @@ import java.util.concurrent.CompletableFuture;
 
 import com.refinedmods.refinedstorage.common.misc.ProcessorItem;
 import com.refinedmods.refinedstorage.common.storage.ItemStorageVariant;
+import io.github.randomusert.mods.tcmpc1.common.util.ConfigRecipeCondition;
 import io.github.randomusert.mods.tcmpc1.common.util.ResourceLocationHelper;
 import io.github.randomusert.mods.tcmpc1.init.ModBlocks;
 import io.github.randomusert.mods.tcmpc1.init.ModItems;
@@ -19,6 +20,7 @@ import mekanism.api.datagen.recipe.builder.*;
 import mekanism.api.recipes.ingredients.creator.IngredientCreatorAccess;
 import mekanism.api.datagen.recipe.builder.ItemStackToItemStackRecipeBuilder;
 import net.neoforged.neoforge.common.Tags;
+import net.neoforged.neoforge.common.conditions.ICondition;
 import net.neoforged.neoforge.registries.DeferredItem;
 
 
@@ -38,13 +40,15 @@ public class ModRecipeProvider extends RecipeProvider {
         ItemStackToItemStackRecipeBuilder.crushing(IngredientCreatorAccess.item().from(Items.GRANITE), new ItemStack(ModCustomItems.TIN_ORE_TC)).build(output);
 
 
+
+
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.COMPRESSED_TIN_BLOCK_X1)
                 .pattern("XXX")
                 .pattern("XXX")
                 .pattern("XXX")
                 .define('X', ModCustomItems.TIN_BLOCK_TC)
                 .unlockedBy("has_tin_block", has(io.github.randomusert.mods.tincraft.init.ModBlocks.TIN_BLOCK))
-                .save(output);
+                .save(output.withConditions(new ConfigRecipeCondition("enableCompressedTinBlockRecipes")));
 
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.COMPRESSED_TIN_BLOCK_X2)
                 .pattern("XXX")
