@@ -17,6 +17,7 @@ public class ModItemModelProvider extends ItemModelProvider {
     protected void registerModels() {
         basicItem(ModItems.INFINIUM_INGOT.get());
         basicItem(ModItems.TIN_INGOT.get());
+        basicItem(ModItems.DIAMOND_HAMMER.get());
 
         for (var type : LargeItemStorageVariant.values()) {
             singleTexture(getPath(ModItems.ITEM_STORAGE_PART.get(type).get()),

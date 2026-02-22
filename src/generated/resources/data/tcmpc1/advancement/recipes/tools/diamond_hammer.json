@@ -1,21 +1,21 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_alloy_atomic": {
+    "has_diamond": {
       "conditions": {
         "items": [
           {
-            "items": "mekanism:alloy_atomic"
+            "items": "minecraft:diamond"
           }
         ]
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "has_infinium": {
+    "has_stick": {
       "conditions": {
         "items": [
           {
-            "items": "tcmpc1:infinium"
+            "items": "minecraft:stick"
           }
         ]
       },
@@ -23,7 +23,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "mekanism:creative_fluid_tank"
+        "recipe": "tcmpc1:diamond_hammer"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -31,13 +31,13 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_alloy_atomic",
-      "has_infinium"
+      "has_diamond",
+      "has_stick"
     ]
   ],
   "rewards": {
     "recipes": [
-      "mekanism:creative_fluid_tank"
+      "tcmpc1:diamond_hammer"
     ]
   }
 }

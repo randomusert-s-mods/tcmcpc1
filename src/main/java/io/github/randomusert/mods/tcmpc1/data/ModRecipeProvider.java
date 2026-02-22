@@ -61,26 +61,22 @@ public class ModRecipeProvider extends RecipeProvider {
                 .unlockedBy("has_antimatter_pellet", has(ModCustomItems.ANTIMATTER_PALLET))
                 .save(output);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModCustomItems.CREATIVE_FLUID_TANK_MEK)
-                .pattern("XYX")
-                .pattern("YOY")
-                .pattern("XYX")
-                .define('Y', ModItems.INFINIUM_INGOT)
-                .define('X', ModCustomItems.ULTIMATE_FLUID_TANK_MEK)
-                .define('O', ModCustomItems.ATOMIC_ALLOY_MEK)
-                .unlockedBy("has_alloy_atomic", has(ModCustomItems.ATOMIC_ALLOY_MEK))
-                .unlockedBy("has_infinium", has(ModItems.INFINIUM_INGOT))
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.DIAMOND_HAMMER)
+                .pattern("dsd")
+                .pattern(" s ")
+                .pattern(" s ")
+                .define('d', Items.DIAMOND)
+                .define('s', Items.STICK)
+                .unlockedBy("has_diamond", has(Items.DIAMOND))
+                .unlockedBy("has_stick", has(Items.STICK))
                 .save(output);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModCustomItems.CREATIVE_BIN_MEK)
-                .pattern("XXX")
-                .pattern("XYX")
-                .pattern("XXX")
-                .define('X', ModItems.INFINIUM_INGOT)
-                .define('Y', ModCustomItems.ULTIMATE_STORAGE_BIN_MEK)
-                .unlockedBy("has_infinium", has(ModItems.INFINIUM_INGOT))
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, Items.GRAVEL)
+                .requires(ModItems.DIAMOND_HAMMER)
+                .requires(Items.COBBLESTONE)
+                .unlockedBy("has_diamond_hammer", has(ModItems.DIAMOND_HAMMER))
+                .unlockedBy("has_cobblestone", has(Items.COBBLESTONE))
                 .save(output);
-
         for (var type : LargeItemStorageVariant.values()) {
             if (type.equals(LargeItemStorageVariant.TIER_5)) {
                 partRecipe(ModItems.ITEM_STORAGE_PART.get(type),

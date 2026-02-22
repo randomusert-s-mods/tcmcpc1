@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "d": {
+      "item": "minecraft:diamond"
+    },
+    "s": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "dsd",
+    " s ",
+    " s "
+  ],
+  "result": {
+    "count": 1,
+    "id": "tcmpc1:diamond_hammer"
+  }
+}

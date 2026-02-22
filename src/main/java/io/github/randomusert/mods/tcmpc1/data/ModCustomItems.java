@@ -17,15 +17,6 @@ public class ModCustomItems {
 
     public static ItemLike ANTIMATTER_PALLET = ItemStringToItemLike.ItemStringToItemLike("mekanism","pellet_antimatter");
 
-    public static ItemLike CREATIVE_FLUID_TANK_MEK = ItemStringToItemLike.ItemStringToItemLike("mekanism", "creative_fluid_tank");
-
-    public static ItemLike ATOMIC_ALLOY_MEK = ItemStringToItemLike.ItemStringToItemLike("mekanism", "alloy_atomic");
-
-    public static ItemLike ULTIMATE_FLUID_TANK_MEK = ItemStringToItemLike.ItemStringToItemLike("mekanism", "ultimate_fluid_tank");
-
-    public static ItemLike ULTIMATE_STORAGE_BIN_MEK = ItemStringToItemLike.ItemStringToItemLike("mekanism", "ultimate_bin");
-
-    public static ItemLike CREATIVE_BIN_MEK = ItemStringToItemLike.ItemStringToItemLike("mekanism", "creative_bin");
 
 
 }
