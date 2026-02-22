@@ -1,3 +1,10 @@
+---
+hide:
+  - navigation
+  - toc
+title: Home
+---
+
 # Tincraft modpack core wiki/docs
 Welcome to tincraft modpack core wiki/docs. this is meant for regular users.
 

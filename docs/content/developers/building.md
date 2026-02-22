@@ -1,3 +1,7 @@
+---
+title: Building
+---
+
 # Building
 This guide shows how to compile from source.
 
